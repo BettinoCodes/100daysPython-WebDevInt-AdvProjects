@@ -8,6 +8,7 @@ import json
 
 #NOTES you must authenticate the scopes before using it with this API, this was a tough one whew, should recieve your token in a token.JSON file
 #improve: make my searches better if song cant be found, BUT SO FAR IT WORKS!
+#Added some extra where I also get the person who produced the song
 
 SPOTIPY_CLIENT_ID='yourid'
 SPOTIPY_CLIENT_SECRET='yoursecret'
