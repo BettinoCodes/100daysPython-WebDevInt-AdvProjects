@@ -5,7 +5,6 @@ import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 from spotipy.oauth2 import SpotifyOAuth
 import json
-import time
 
 #NOTES you must authenticate the scopes before using it with this API, this was a tough one whew, should recieve your token in a token.JSON file
 #improve: make my searches better if song cant be found, BUT SO FAR IT WORKS!
