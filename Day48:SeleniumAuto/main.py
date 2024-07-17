@@ -1,5 +1,6 @@
 #POST THE CODE FOR SELENIUM
 #still needs work
+#selenium is hard
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
