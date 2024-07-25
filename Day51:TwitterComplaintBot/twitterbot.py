@@ -29,3 +29,5 @@ print(f'Download Speed: {download_speed}')
 
 upload_speed = driver.find_element(By.XPATH, '//*[@id="container"]/div/div[3]/div/div/div/div[2]/div[3]/div[3]/div/div[3]/div/div/div[2]/div[1]/div[2]/div/div[2]/span')
 print(f'Upload Speed: {upload_speed}')
+
+#check for the download speed and if it is less than 300 request the twitter website
