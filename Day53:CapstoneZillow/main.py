@@ -1,4 +1,4 @@
-#Using BeautifulSoup to scrape and using selium to input into forms to input an excel sheet automatically
+#Using BeautifulSoup to scrape and using selenium to input into forms to input an excel sheet automatically
 #can put into classes
 from bs4 import BeautifulSoup
 from selenium import webdriver
