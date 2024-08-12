@@ -1,1 +1,92 @@
-#styles here
+body{
+    background-color: black;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+    background-image: url('../images/black-background-04-coolbackgrounds.png');
+}
+
+html{
+    padding: 20px;
+}
+audio{
+    position: relative;
+}
+
+
+h1{
+    color: white;
+    font-family: Libre Baskerville, sans-serif;
+    margin-bottom: 3px;
+}
+
+h2{
+    color: white;
+    background-color: black;
+    position: relative;
+    text-align: center;
+}
+
+.image-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+    position: relative;
+    border: 2px solid grey; /* Thin grey line around the flexbox */
+    padding: 10px; 
+    height: 650px;
+    width: 700px;
+    border-radius: 15px;
+    z-index: 2;
+    background-color: black;
+}
+
+.image-box img{
+        width: 60%; /* Adjust to your preferred size */
+        height: 60%;
+        position: relative;
+        border-radius: 50%; 
+}
+
+.button-links{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center; 
+    position: relative;
+}
+
+.circular-button {
+    width: 60px; 
+    height: 60px; 
+    border-radius: 50%; 
+    border: 2px solid grey; /* Optional: Add a border */
+    background-color: transparent; /* Make the button background see-through */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; /* Change cursor to pointer on hover */
+    padding: 0; /* Remove default padding */
+    outline: none;
+    margin: 6px;
+    color: white;
+    transition: opacity 0.3s ease, border-color 0.3s ease;
+}
+
+.circular-button:hover { /* Decrease opacity on hover */
+    border-color: white; /* Change border color to white on hover */
+}
+
+.button-icon {
+    width: 50%; 
+    height: 50%; 
+}
+
+#music-player{
+    margin-top: 5px;
+}
+
