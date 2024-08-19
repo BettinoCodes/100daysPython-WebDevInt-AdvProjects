@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="static/styles/style.css">
+  </head>
+  <body>
+    <main>
+        <h1>Hello {{person_name}}</h1>  
+        <h2>Your most likely {{age}} years old</h2>
+        <h3>Your gender is most likely {{gender}}</h3>
+        <a href= {{ url_for('blogs_posted') }}>Go to blogs</a>
+    </main>
+	<script src="index.js"></script>
+  </body>
+  <footer>
+    <p>
+      Copyright@{{current_year}}
+    </p>
+  </footer>
+</html>
