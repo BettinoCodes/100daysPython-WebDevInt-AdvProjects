@@ -1,5 +1,3 @@
-#practicing code getting used to flask again, using jinja
-
 from flask import Flask, render_template
 import datetime
 import requests
@@ -10,7 +8,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def start_screen():
-    return render_template("index.html",person_name = vname, age=p_age, gender=p_gender)
+    return render_template("index.html")
 
 @app.route("/guess/<vname>")
 def guess_name(vname):
@@ -24,7 +22,12 @@ def guess_name(vname):
     p_gender = result_info["gender"]
     return render_template("index.html",person_name = vname, age=p_age, gender=p_gender)
 
-
+@app.route("/blogs")
+def blogs_posted():
+    res = requests.get("https://api.npoint.io/685c852ac3a06729360e")
+    post = res.json()
+    all_post = post["blogs"]
+    return render_template("blogs.html", posts=all_post)
 
 if __name__ == "__main__":
     app.run(debug=True)
