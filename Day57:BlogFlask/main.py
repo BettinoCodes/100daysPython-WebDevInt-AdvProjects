@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def start_screen():
-    return render_template("index.html")
+    return "Hello User Welcome to the Site"
 
 @app.route("/guess/<vname>")
 def guess_name(vname):
